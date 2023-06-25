@@ -1,4 +1,4 @@
-CFLAGS+=-O2 -g -Wall -Werror -Ifec
+CFLAGS+=-O2 -g -Ifec
 LDFLAGS=
 LIBS=-lm
 CC=gcc
@@ -30,4 +30,4 @@ test: fec_tests
 	./fec_tests
 
 clean:
-	rm -f *~ *.o fec/*.o dump978 uat2json uat2text uat2esnt fec_tests
+	rm -f *~ *.o fec/*.o dump978 uat2json uat2text uat2esnt fec_tests extract_nexrad
